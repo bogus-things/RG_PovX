@@ -1,21 +1,12 @@
-# HS2_PovX
-* PoV (first person view) mod for HoneySelect 2.
-* If you only want to use this for `StudioNEOV2`, a better PoV plugin made by [Mantas-2155X](https://github.com/Mantas-2155X) can be found [here](https://github.com/Mantas-2155X/StudioPOV).
-* Settings can be changed if you have `BepInEx.ConfigurationManager` installed.
-
-<details>
-  <summary>Preview</summary>
-  
-![](https://raw.githubusercontent.com/FairBear/HS2_PovX/master/Preview/Preview0.png)
-</details>
+# RG_PovX
+* PoV (first person view) mod ported from (HS2_PovX)[https://github.com/Animal42069/HS2_PovX]
 
 ## Requirements
-* Honey Select 2
-* BepInEx
+This plugin was developed exclusively using the BetterRepack repacks. Compatibility/support is not guaranteed for other types of game installations.
 
-## Installment
-* Extract the `HS2_PovX.dll` in the `BepInEx\plugins` folder.
-* Play.
+## Installation
+1. Download the plugin from [Releases](https://github.com/bogus-things/RG_PovX/releases) (Check the "Compatibility" section to ensure the plugin will work for you)
+2. Extract the `BepInEx` folder from the `.zip` and place it in your game's root directory
 
 ## Controls
 __PoV Toggle Key__ = `, (Comma)`

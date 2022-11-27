@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{1bb44fc0-7257-4822-8df9-67f3f96a6878}") = "RG_PovX", "RG_PovX.csproj", "{20445db3-6a45-4983-aa65-f3982f3a946d}"
+Project("{1bb44fc0-7257-4822-8df9-67f3f96a6878}") = "RG_PovX", "src\RG_PovX.csproj", "{20445db3-6a45-4983-aa65-f3982f3a946d}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

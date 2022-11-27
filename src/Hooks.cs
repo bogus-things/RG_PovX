@@ -23,9 +23,9 @@ namespace RGPovX
 			return false;
 		}
 
-		[HarmonyPostfix, HarmonyPatch(typeof(HScene), nameof(HScene.SetStartVoice))]
-		public static void HScene_Post_SetStartVoice(HScene __instance)
-        {
+		[HarmonyPostfix, HarmonyPatch(typeof(HScene), nameof(HScene.Start))]
+		public static void HScene_Post_Start(HScene __instance)
+		{
 			PovController.hScene = __instance;
 		}
 
@@ -41,10 +41,11 @@ namespace RGPovX
 			PovController.CheckHSceneHeadLock();
 		}
 
-		[HarmonyPrefix, HarmonyPatch(typeof(HScene), nameof(HScene.EndFade))]
+		[HarmonyPrefix, HarmonyPatch(typeof(HScene), nameof(HScene.OnDestroy))]
 		public static void HScene_Pre_OnDestroy()
         {
 			PovController.EnablePoV(false);
+			PovController.hScene = null;
         }
 
 		[HarmonyPrefix, HarmonyPatch(typeof(ExitDialog), nameof(ExitDialog.Open))]

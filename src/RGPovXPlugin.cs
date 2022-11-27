@@ -12,7 +12,7 @@ namespace RGPovX
 	{
 		const string GUID = "com.bogus.RGPovX";
 		public const string PluginName = "RG PoV X";
-		public const string Version = "0.0.1";
+		public const string Version = "0.0.2";
 		private const string ComponentName = "BogusComponents";
 
 		const string SECTION_GENERAL = "General";

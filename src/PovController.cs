@@ -2,6 +2,7 @@
 using Chara;
 using System.Collections.Generic;
 using System.Linq;
+using UnhollowerBaseLib;
 using UnityEngine;
 
 namespace RGPovX
@@ -179,12 +180,35 @@ namespace RGPovX
 
 		public static ChaControl[] GetSceneCharacters()
 		{
-			GameObject actorGroup = GameObject.Find("ActorGroup");
-			if (actorGroup != null)
+            // If in an H scene, grab the list of participants
+            if (hScene != null)
             {
-				return actorGroup.GetComponentsInChildren<ChaControl>();
-			}
-			return new ChaControl[0];
+                Il2CppReferenceArray<ChaControl> females = hScene.GetFemales();
+                Il2CppReferenceArray<ChaControl> males = hScene.GetMales();
+
+                List<ChaControl> chars = new List<ChaControl>();
+
+                foreach (ChaControl female in females)
+                {
+                    chars.Add(female);
+                }
+
+                foreach (ChaControl male in males)
+                {
+                    chars.Add(male);
+                }
+
+                return chars.ToArray();
+            }
+
+            // If in the main game, grab all the actors in the scene
+            GameObject actorGroup = GameObject.Find("ActorGroup");
+            if (actorGroup != null)
+            {
+                return actorGroup.GetComponentsInChildren<ChaControl>();
+            }
+
+            return new ChaControl[0];
 		}
 
 		public static void SetPoVCharacter(ChaControl character)
