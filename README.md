@@ -1,5 +1,5 @@
 # RG_PovX
-* PoV (first person view) mod ported from (HS2_PovX)[https://github.com/Animal42069/HS2_PovX]
+* PoV (first person view) mod ported from [HS2_PovX](https://github.com/Animal42069/HS2_PovX)
 
 ## Requirements
 This plugin was developed exclusively using the BetterRepack repacks. Compatibility/support is not guaranteed for other types of game installations.
