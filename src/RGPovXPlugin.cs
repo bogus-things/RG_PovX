@@ -7,12 +7,13 @@ using UnhollowerRuntimeLib;
 
 namespace RGPovX
 {
+	[BepInProcess("RoomGirl")]
 	[BepInPlugin(GUID, PluginName, Version)]
 	public partial class RGPovXPlugin : BasePlugin
 	{
 		const string GUID = "com.bogus.RGPovX";
 		public const string PluginName = "RG PoV X";
-		public const string Version = "0.0.2";
+		public const string Version = "0.0.3";
 		private const string ComponentName = "BogusComponents";
 
 		const string SECTION_GENERAL = "General";
